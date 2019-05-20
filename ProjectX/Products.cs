@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace interface
+namespace ProjectX
 {
     public partial class Products : Form
-{
-    public Products()
     {
-        InitializeComponent();
+        public Products()
+        {
+            InitializeComponent();
+        }
     }
-}
 }

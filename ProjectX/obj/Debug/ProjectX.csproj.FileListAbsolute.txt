@@ -1,0 +1,8 @@
+C:\Users\qqq\Documents\Visual Studio 2015\Projects\projectx\ProjectX\bin\Debug\ProjectX.exe.config
+C:\Users\qqq\Documents\Visual Studio 2015\Projects\projectx\ProjectX\bin\Debug\ProjectX.exe
+C:\Users\qqq\Documents\Visual Studio 2015\Projects\projectx\ProjectX\bin\Debug\ProjectX.pdb
+C:\Users\qqq\Documents\Visual Studio 2015\Projects\projectx\ProjectX\obj\Debug\ProjectX.LogIn.resources
+C:\Users\qqq\Documents\Visual Studio 2015\Projects\projectx\ProjectX\obj\Debug\ProjectX.Properties.Resources.resources
+C:\Users\qqq\Documents\Visual Studio 2015\Projects\projectx\ProjectX\obj\Debug\ProjectX.csproj.GenerateResource.Cache
+C:\Users\qqq\Documents\Visual Studio 2015\Projects\projectx\ProjectX\obj\Debug\ProjectX.exe
+C:\Users\qqq\Documents\Visual Studio 2015\Projects\projectx\ProjectX\obj\Debug\ProjectX.pdb
