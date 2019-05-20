@@ -28,22 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lịchSửNhậpXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btInput = new System.Windows.Forms.Button();
+            this.btOutput = new System.Windows.Forms.Button();
+            this.btItems = new System.Windows.Forms.Button();
+            this.btSupplier = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvMain = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lịchSửNhậpXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.khoHangDataSet = new KhoHang.KhoHangDataSet();
+            this.matHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.matHangTableAdapter = new KhoHang.KhoHangDataSetTableAdapters.MatHangTableAdapter();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matHangBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -66,11 +72,17 @@
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.adminToolStripMenuItem.Text = "Quản lý nhân viên";
             // 
+            // lịchSửNhậpXuấtToolStripMenuItem
+            // 
+            this.lịchSửNhậpXuấtToolStripMenuItem.Name = "lịchSửNhậpXuấtToolStripMenuItem";
+            this.lịchSửNhậpXuấtToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
+            this.lịchSửNhậpXuấtToolStripMenuItem.Text = "Lịch sử nhập xuất";
+            // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
-            this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
+            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Đổi mật khẩu";
             // 
             // đăngXuấtToolStripMenuItem
             // 
@@ -78,58 +90,72 @@
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             // 
-            // button1
+            // btInput
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 100);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Nhập kho";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btInput.Image = ((System.Drawing.Image)(resources.GetObject("btInput.Image")));
+            this.btInput.Location = new System.Drawing.Point(12, 31);
+            this.btInput.Name = "btInput";
+            this.btInput.Size = new System.Drawing.Size(140, 100);
+            this.btInput.TabIndex = 2;
+            this.btInput.Text = "Nhập kho";
+            this.btInput.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btInput.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btOutput
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(158, 31);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 100);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Xuất kho";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btOutput.Image = ((System.Drawing.Image)(resources.GetObject("btOutput.Image")));
+            this.btOutput.Location = new System.Drawing.Point(158, 31);
+            this.btOutput.Name = "btOutput";
+            this.btOutput.Size = new System.Drawing.Size(140, 100);
+            this.btOutput.TabIndex = 3;
+            this.btOutput.Text = "Xuất kho";
+            this.btOutput.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btOutput.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btItems
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(304, 31);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 100);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Mặt hàng";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btItems.Image = ((System.Drawing.Image)(resources.GetObject("btItems.Image")));
+            this.btItems.Location = new System.Drawing.Point(304, 31);
+            this.btItems.Name = "btItems";
+            this.btItems.Size = new System.Drawing.Size(140, 100);
+            this.btItems.TabIndex = 4;
+            this.btItems.Text = "Mặt hàng";
+            this.btItems.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btItems.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btSupplier
             // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(450, 31);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 100);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Nhà cung cấp";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btSupplier.Image = ((System.Drawing.Image)(resources.GetObject("btSupplier.Image")));
+            this.btSupplier.Location = new System.Drawing.Point(450, 31);
+            this.btSupplier.Name = "btSupplier";
+            this.btSupplier.Size = new System.Drawing.Size(140, 100);
+            this.btSupplier.TabIndex = 5;
+            this.btSupplier.Text = "Nhà cung cấp";
+            this.btSupplier.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btSupplier.UseVisualStyleBackColor = true;
+            this.btSupplier.Click += new System.EventHandler(this.btSupplier_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgvMain);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 137);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(578, 404);
-            this.panel1.TabIndex = 5;
+            this.panel1.TabIndex = 1;
+            // 
+            // dgvMain
+            // 
+            this.dgvMain.AllowUserToAddRows = false;
+            this.dgvMain.AllowUserToDeleteRows = false;
+            this.dgvMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMain.Location = new System.Drawing.Point(4, 37);
+            this.dgvMain.Name = "dgvMain";
+            this.dgvMain.ReadOnly = true;
+            this.dgvMain.RowTemplate.Height = 24;
+            this.dgvMain.Size = new System.Drawing.Size(571, 364);
+            this.dgvMain.TabIndex = 1;
             // 
             // label1
             // 
@@ -141,23 +167,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách tồn kho";
             // 
-            // dataGridView1
+            // khoHangDataSet
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 37);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(571, 364);
-            this.dataGridView1.TabIndex = 1;
+            this.khoHangDataSet.DataSetName = "KhoHangDataSet";
+            this.khoHangDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // lịchSửNhậpXuấtToolStripMenuItem
+            // matHangBindingSource
             // 
-            this.lịchSửNhậpXuấtToolStripMenuItem.Name = "lịchSửNhậpXuấtToolStripMenuItem";
-            this.lịchSửNhậpXuấtToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
-            this.lịchSửNhậpXuấtToolStripMenuItem.Text = "Lịch sử nhập xuất";
+            this.matHangBindingSource.DataMember = "MatHang";
+            this.matHangBindingSource.DataSource = this.khoHangDataSet;
+            // 
+            // matHangTableAdapter
+            // 
+            this.matHangTableAdapter.ClearBeforeFill = true;
             // 
             // fMain
             // 
@@ -165,21 +187,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 553);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btSupplier);
+            this.Controls.Add(this.btItems);
+            this.Controls.Add(this.btOutput);
+            this.Controls.Add(this.btInput);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fMain";
+            this.Text = "Trang chủ";
+            this.Load += new System.EventHandler(this.fMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matHangBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,13 +216,16 @@
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinTàiKhoảnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btInput;
+        private System.Windows.Forms.Button btOutput;
+        private System.Windows.Forms.Button btItems;
+        private System.Windows.Forms.Button btSupplier;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMain;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem lịchSửNhậpXuấtToolStripMenuItem;
+        private KhoHangDataSet khoHangDataSet;
+        private System.Windows.Forms.BindingSource matHangBindingSource;
+        private KhoHangDataSetTableAdapters.MatHangTableAdapter matHangTableAdapter;
     }
 }
