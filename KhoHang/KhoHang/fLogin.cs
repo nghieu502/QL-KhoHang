@@ -22,6 +22,7 @@ namespace KhoHang
             this.Hide();
             fMain x = new fMain();
             x.ShowDialog();
+            this.Show();
         }
 
         private void btEsc_Click(object sender, EventArgs e)
