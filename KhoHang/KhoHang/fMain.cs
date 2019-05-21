@@ -38,5 +38,17 @@ namespace KhoHang
             this.matHangTableAdapter.Fill(this.khoHangDataSet.MatHang);
 
         }
+
+        private void btInput_Click(object sender, EventArgs e)
+        {
+            fInput input = new fInput();
+            input.ShowDialog();
+        }
+
+        private void btOutput_Click(object sender, EventArgs e)
+        {
+            fOutput output = new fOutput();
+            output.ShowDialog();
+        }
     }
 }

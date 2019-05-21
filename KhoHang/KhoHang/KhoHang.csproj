@@ -119,11 +119,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fInput.resx">
+      <DependentUpon>fInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fOutput.resx">
+      <DependentUpon>fOutput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSupplier.resx">
       <DependentUpon>fSupplier.cs</DependentUpon>
