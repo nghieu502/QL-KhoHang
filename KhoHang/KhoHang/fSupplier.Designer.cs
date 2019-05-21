@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvSupplier = new System.Windows.Forms.DataGridView();
+            this.tenNCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiNCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdtNCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailNCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhaCungCapBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khoHangDataSet = new KhoHang.KhoHangDataSet();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tbID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,21 +54,15 @@
             this.btInsert = new System.Windows.Forms.Button();
             this.btUpdate = new System.Windows.Forms.Button();
             this.btDelete = new System.Windows.Forms.Button();
-            this.khoHangDataSet = new KhoHang.KhoHangDataSet();
-            this.nhaCungCapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nhaCungCapTableAdapter = new KhoHang.KhoHangDataSetTableAdapters.NhaCungCapTableAdapter();
-            this.tenNCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiNCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdtNCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailNCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhaCungCapBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhaCungCapBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvSupplier
@@ -84,6 +84,44 @@
             this.dgvSupplier.RowTemplate.Height = 24;
             this.dgvSupplier.Size = new System.Drawing.Size(587, 429);
             this.dgvSupplier.TabIndex = 0;
+            // 
+            // tenNCCDataGridViewTextBoxColumn
+            // 
+            this.tenNCCDataGridViewTextBoxColumn.DataPropertyName = "tenNCC";
+            this.tenNCCDataGridViewTextBoxColumn.HeaderText = "Tên";
+            this.tenNCCDataGridViewTextBoxColumn.Name = "tenNCCDataGridViewTextBoxColumn";
+            this.tenNCCDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // diaChiNCCDataGridViewTextBoxColumn
+            // 
+            this.diaChiNCCDataGridViewTextBoxColumn.DataPropertyName = "diaChiNCC";
+            this.diaChiNCCDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
+            this.diaChiNCCDataGridViewTextBoxColumn.Name = "diaChiNCCDataGridViewTextBoxColumn";
+            this.diaChiNCCDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sdtNCCDataGridViewTextBoxColumn
+            // 
+            this.sdtNCCDataGridViewTextBoxColumn.DataPropertyName = "sdtNCC";
+            this.sdtNCCDataGridViewTextBoxColumn.HeaderText = "Số điện thoại";
+            this.sdtNCCDataGridViewTextBoxColumn.Name = "sdtNCCDataGridViewTextBoxColumn";
+            this.sdtNCCDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailNCCDataGridViewTextBoxColumn
+            // 
+            this.emailNCCDataGridViewTextBoxColumn.DataPropertyName = "emailNCC";
+            this.emailNCCDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailNCCDataGridViewTextBoxColumn.Name = "emailNCCDataGridViewTextBoxColumn";
+            this.emailNCCDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nhaCungCapBindingSource
+            // 
+            this.nhaCungCapBindingSource.DataMember = "NhaCungCap";
+            this.nhaCungCapBindingSource.DataSource = this.khoHangDataSet;
+            // 
+            // khoHangDataSet
+            // 
+            this.khoHangDataSet.DataSetName = "KhoHangDataSet";
+            this.khoHangDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel2
             // 
@@ -229,6 +267,7 @@
             this.btInsert.TabIndex = 6;
             this.btInsert.Text = "Thêm";
             this.btInsert.UseVisualStyleBackColor = true;
+            this.btInsert.Click += new System.EventHandler(this.btInsert_Click);
             // 
             // btUpdate
             // 
@@ -238,6 +277,7 @@
             this.btUpdate.TabIndex = 7;
             this.btUpdate.Text = "Sửa";
             this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
             // btDelete
             // 
@@ -247,48 +287,11 @@
             this.btDelete.TabIndex = 8;
             this.btDelete.Text = "Xóa";
             this.btDelete.UseVisualStyleBackColor = true;
-            // 
-            // khoHangDataSet
-            // 
-            this.khoHangDataSet.DataSetName = "KhoHangDataSet";
-            this.khoHangDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nhaCungCapBindingSource
-            // 
-            this.nhaCungCapBindingSource.DataMember = "NhaCungCap";
-            this.nhaCungCapBindingSource.DataSource = this.khoHangDataSet;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // nhaCungCapTableAdapter
             // 
             this.nhaCungCapTableAdapter.ClearBeforeFill = true;
-            // 
-            // tenNCCDataGridViewTextBoxColumn
-            // 
-            this.tenNCCDataGridViewTextBoxColumn.DataPropertyName = "tenNCC";
-            this.tenNCCDataGridViewTextBoxColumn.HeaderText = "Tên";
-            this.tenNCCDataGridViewTextBoxColumn.Name = "tenNCCDataGridViewTextBoxColumn";
-            this.tenNCCDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // diaChiNCCDataGridViewTextBoxColumn
-            // 
-            this.diaChiNCCDataGridViewTextBoxColumn.DataPropertyName = "diaChiNCC";
-            this.diaChiNCCDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
-            this.diaChiNCCDataGridViewTextBoxColumn.Name = "diaChiNCCDataGridViewTextBoxColumn";
-            this.diaChiNCCDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sdtNCCDataGridViewTextBoxColumn
-            // 
-            this.sdtNCCDataGridViewTextBoxColumn.DataPropertyName = "sdtNCC";
-            this.sdtNCCDataGridViewTextBoxColumn.HeaderText = "Số điện thoại";
-            this.sdtNCCDataGridViewTextBoxColumn.Name = "sdtNCCDataGridViewTextBoxColumn";
-            this.sdtNCCDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // emailNCCDataGridViewTextBoxColumn
-            // 
-            this.emailNCCDataGridViewTextBoxColumn.DataPropertyName = "emailNCC";
-            this.emailNCCDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailNCCDataGridViewTextBoxColumn.Name = "emailNCCDataGridViewTextBoxColumn";
-            this.emailNCCDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // fSupplier
             // 
@@ -309,6 +312,8 @@
             this.Text = "Nhà cung cấp";
             this.Load += new System.EventHandler(this.fSupplier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhaCungCapBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -319,8 +324,6 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhaCungCapBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -46,7 +46,6 @@ create table PhieuNhap
 	ngayNhap date not null,
 	soLuongN int not null,
 	giaN int not null,
-	idUS int references Users(idUS),
 	idMH int references MatHang(idMH)
 )
 go
@@ -57,7 +56,6 @@ create table PhieuXuat
 	ngayXuat date not null,
 	soLuongX int not null,
 	giaX int not null,
-	idUS int references Users(idUS),
 	idMH int references MatHang(idMH)
 )
 go
