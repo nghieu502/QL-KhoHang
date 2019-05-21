@@ -125,6 +125,9 @@
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fManager.resx">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fSupplier.resx">
       <DependentUpon>fSupplier.cs</DependentUpon>
     </EmbeddedResource>

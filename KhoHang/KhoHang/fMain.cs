@@ -21,9 +21,7 @@ namespace KhoHang
         private void btSupplier_Click(object sender, EventArgs e)
         {
             fSupplier x = new fSupplier();
-            this.Hide();
             x.ShowDialog();
-            this.Show();
         }
 
         void LoadMain()
@@ -37,6 +35,49 @@ namespace KhoHang
             // TODO: This line of code loads data into the 'khoHangDataSet.MatHang' table. You can move, or remove it, as needed.
             this.matHangTableAdapter.Fill(this.khoHangDataSet.MatHang);
 
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            fLogin x = new fLogin();
+            x.Show();
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fManager x = new fManager();
+            x.ShowDialog();
+        }
+
+        private void btItems_Click(object sender, EventArgs e)
+        {
+            fItems x = new fItems();
+            x.ShowDialog();
+        }
+
+        private void btOutput_Click(object sender, EventArgs e)
+        {
+            fOutput x = new fOutput();
+            x.ShowDialog();
+        }
+
+        private void btInput_Click(object sender, EventArgs e)
+        {
+            fInput x = new fInput();
+            x.ShowDialog();
+        }
+
+        private void lịchSửNhậpXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fHistory x = new fHistory();
+            x.ShowDialog();
+        }
+
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fInfor x = new fInfor();
+            x.ShowDialog();
         }
     }
 }

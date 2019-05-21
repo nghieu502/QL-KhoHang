@@ -71,24 +71,28 @@
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.adminToolStripMenuItem.Text = "Quản lý nhân viên";
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // lịchSửNhậpXuấtToolStripMenuItem
             // 
             this.lịchSửNhậpXuấtToolStripMenuItem.Name = "lịchSửNhậpXuấtToolStripMenuItem";
             this.lịchSửNhậpXuấtToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
             this.lịchSửNhậpXuấtToolStripMenuItem.Text = "Lịch sử nhập xuất";
+            this.lịchSửNhậpXuấtToolStripMenuItem.Click += new System.EventHandler(this.lịchSửNhậpXuấtToolStripMenuItem_Click);
             // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
             this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Đổi mật khẩu";
+            this.thôngTinTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.thôngTinTàiKhoảnToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
+            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // btInput
             // 
@@ -100,6 +104,7 @@
             this.btInput.Text = "Nhập kho";
             this.btInput.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btInput.UseVisualStyleBackColor = true;
+            this.btInput.Click += new System.EventHandler(this.btInput_Click);
             // 
             // btOutput
             // 
@@ -111,6 +116,7 @@
             this.btOutput.Text = "Xuất kho";
             this.btOutput.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btOutput.UseVisualStyleBackColor = true;
+            this.btOutput.Click += new System.EventHandler(this.btOutput_Click);
             // 
             // btItems
             // 
@@ -122,6 +128,7 @@
             this.btItems.Text = "Mặt hàng";
             this.btItems.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btItems.UseVisualStyleBackColor = true;
+            this.btItems.Click += new System.EventHandler(this.btItems_Click);
             // 
             // btSupplier
             // 

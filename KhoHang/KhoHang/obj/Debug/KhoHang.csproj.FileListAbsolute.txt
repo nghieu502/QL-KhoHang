@@ -13,3 +13,4 @@ E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.dll
 E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.SqlServer.dll
 E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.xml
 E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.SqlServer.xml
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fManager.resources
