@@ -1,0 +1,32 @@
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\KhoHang.exe.config
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\KhoHang.exe
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\KhoHang.pdb
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.csprojResolveAssemblyReference.cache
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fLogin.resources
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.Properties.Resources.resources
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.csproj.GenerateResource.Cache
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.exe
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.pdb
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fMain.resources
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fSupplier.resources
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.dll
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.SqlServer.dll
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.xml
+E:\TT - Nhóm (18)\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\bin\Debug\KhoHang.exe.config
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.exe
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.pdb
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\bin\Debug\KhoHang.exe
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\bin\Debug\KhoHang.pdb
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.dll
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.xml
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.csprojResolveAssemblyReference.cache
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fLogin.resources
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fMain.resources
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fSupplier.resources
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.Properties.Resources.resources
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.csproj.GenerateResource.Cache
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fInput.resources
+C:\Users\qqq\Documents\GitHub\QL-KhoHang\KhoHang\KhoHang\obj\Debug\KhoHang.fOutput.resources

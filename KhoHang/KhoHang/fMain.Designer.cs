@@ -72,28 +72,24 @@
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
             this.adminToolStripMenuItem.Text = "Quản lý nhân viên";
-            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // lịchSửNhậpXuấtToolStripMenuItem
             // 
             this.lịchSửNhậpXuấtToolStripMenuItem.Name = "lịchSửNhậpXuấtToolStripMenuItem";
             this.lịchSửNhậpXuấtToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.lịchSửNhậpXuấtToolStripMenuItem.Text = "Lịch sử nhập xuất";
-            this.lịchSửNhậpXuấtToolStripMenuItem.Click += new System.EventHandler(this.lịchSửNhậpXuấtToolStripMenuItem_Click);
             // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
             this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Đổi mật khẩu";
-            this.thôngTinTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.thôngTinTàiKhoảnToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
-            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // btInput
             // 
@@ -132,7 +128,6 @@
             this.btItems.Text = "Mặt hàng";
             this.btItems.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btItems.UseVisualStyleBackColor = true;
-            this.btItems.Click += new System.EventHandler(this.btItems_Click);
             // 
             // btSupplier
             // 

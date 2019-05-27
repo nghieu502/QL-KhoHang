@@ -26,7 +26,8 @@ namespace KhoHang
             {
                 this.Hide();
                 fMain x = new fMain();
-                x.Show();
+                x.ShowDialog();
+                this.Show();
             }
             else
             {
